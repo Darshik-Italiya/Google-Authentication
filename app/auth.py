@@ -19,7 +19,6 @@ oauth.register(
 )
 
 
-# Login route
 @router.get("/login")
 async def login(request: Request):
     redirect_uri = os.getenv("GOOGLE_REDIRECT_URI")
