@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from starlette.middleware.sessions import SessionMiddleware
-from .auth import router as auth_router
 from dotenv import load_dotenv
+from app.auth import router as auth_router
 import os
 
 load_dotenv()
